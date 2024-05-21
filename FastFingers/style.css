@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #1d2630;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 700px;
+    padding: 30px 30px;
+    background-color: #eef1ff;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 500px;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18;
+    margin-bottom: 30px;
+}
+
+.stats span {
+    font-weight: 600;
+    color: #e81c43;
+}
+
+#quote {
+    user-select: none;
+    cursor: default;
+    text-align: justify;
+    margin: 50px 0 30px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    float: right;
+    margin-top: 20px;
+    background-color: #44b267;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007024;
+}
+
+.result {
+    margin-top: 40px;
+    display: none;
+}
+
+.result h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper span {
+    font-weight: 600;
+}
+
+.success {
+    color: #44b267;
+}
+
+.fail {
+    color: #e81c43;
+}
