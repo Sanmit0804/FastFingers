@@ -79,5 +79,5 @@ Thanks to the creators of the Quotable API for the random quotes feature.
 
 ## Contact
 
-For any questions or suggestions, please contact your-email@example.com.
+For any questions or suggestions, please contact sanmitsuthar3@gmail.com
 
