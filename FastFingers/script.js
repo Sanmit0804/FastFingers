@@ -18,6 +18,14 @@ const userInput = document.querySelector("#quote-input");
 const RightKeySound = new Audio("./Sounds/keyPress.mp3");
 const WrongKeySound = new Audio("./Sounds/wrongKeyPress.wav");
 
+// Pop-Up
+const closeBtn = document.getElementById("closeModal");
+const modal = document.getElementById("modal");
+
+closeBtn.addEventListener('click',()=>{
+  modal.classList.remove("open");
+})
+
 let quote = "";
 let time = 60;
 let timer = "";
@@ -132,6 +140,7 @@ const startTest = () => {
 };
 
 window.onload = () => {
+  modal.classList.add("open");
   userInput.value = "";
   document.querySelector("#start-test").style.display = "block";
   document.querySelector("#stop-test").style.display = "none";
