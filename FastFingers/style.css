@@ -25,6 +25,25 @@ body.dark-mode{
     color: #fff
 }
 
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #44b267;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#theme-toggle:hover {
+    background-color: #007024;
+}
+
+
 .container {
     width: 700px;
     padding: 30px 30px;
