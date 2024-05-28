@@ -154,3 +154,25 @@ window.onload = () => {
 document.getElementById("restart").addEventListener("click", () => {
   window.location.reload();
 });
+
+
+// dark theme
+document.addEventListener('DOMContentLoaded', function () {
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  themeToggleBtn.addEventListener('click', function () {
+      body.classList.toggle('dark-mode');
+      body.classList.toggle('light-mode');
+      themeToggleBtn.textContent = body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+  });
+
+  // Initialize theme
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      body.classList.add('dark-mode');
+      themeToggleBtn.textContent = 'Light Mode';
+  } else {
+      body.classList.add('light-mode');
+      themeToggleBtn.textContent = 'Dark Mode';
+  }
+});
