@@ -155,7 +155,6 @@ document.getElementById("restart").addEventListener("click", () => {
   window.location.reload();
 });
 
-
 // dark theme
 document.addEventListener('DOMContentLoaded', function () {
   const themeToggleBtn = document.getElementById('theme-toggle');
